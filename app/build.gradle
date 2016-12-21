@@ -25,6 +25,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.0.1'
 }
 
+//新增插件，统计方法关联的大小
 buildscript {
     repositories {
         mavenCentral() // or jcenter()
