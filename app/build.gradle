@@ -28,7 +28,8 @@ dependencies {
 //新增插件，统计方法关联的大小
 buildscript {
     repositories {
-        mavenCentral() // or jcenter()
+        jcenter()
+        //mavenCentral() or jcenter()
     }
 
     dependencies {
@@ -38,3 +39,4 @@ buildscript {
 
 // make sure this line comes *after* you apply the Android plugin
 apply plugin: 'com.getkeepsafe.dexcount'
+
