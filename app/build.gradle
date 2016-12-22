@@ -25,4 +25,18 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.0.1'
 }
 
-//准备添加插件
+//新增插件，统计方法关联的大小
+buildscript {
+    repositories {
+        jcenter()
+        //mavenCentral() or jcenter()
+    }
+
+    dependencies {
+        classpath 'com.getkeepsafe.dexcount:dexcount-gradle-plugin:0.6.2'
+    }
+}
+
+// make sure this line comes *after* you apply the Android plugin
+apply plugin: 'com.getkeepsafe.dexcount'
+
